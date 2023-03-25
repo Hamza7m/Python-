@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Cairo:wght@200;300&family=Nunito&family=Nunito+Sans:ital@1&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:wght@300&family=Smooch+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;;
+}
+
+:root{
+    --main-color:#e74c3c ; 
+    --black-color :rgb(10, 7, 7) ; 
+
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0.19rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: var(--main-color);
+}
+body{
+    background-color: var(--main-color);
+    font-family:'Akshar', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+section{
+    padding: 7%;
+    border-bottom: #fff 10px;
+
+}
+.btn{
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20.5px;
+    margin-top:20%;
+    margin-bottom: 10px;
+    box-shadow: 20rem rgb(63, 61, 61); 
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+
+}
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+hr{
+  display:inline-block;
+}
+header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 50px;
+
+}
+header{
+    border-radius: 100px;
+}
+header .logo{
+  width: 350px;
+  padding-left: 10px;
+}
+header .logo img{
+    width: 15%;
+
+}
+
+header .navbar{
+    margin-right: 10px;
+}
+header .navbar a{
+margin: 0 1rem;
+font-size: 1.0rem;
+padding-left: 0.5vh;
+color :var(--black-color);
+border-bottom: 0.1rem solid  transparent ;
+}
+header .navbar .active,
+header .navbar a:hover{
+border-bottom: solid #e27d72  ;
+padding-bottom: 0.1rem;
+}
+
+ /* section home etiketler */
+ .home{
+    /* background img is not working  */
+    background:url(../images/home.jpg) ;
+     background-size: cover;
+     background-position: center;
+     margin-top: -4.5%;
+     min-height: 700px;
+
+ }
+ .home .contant {
+    max-width: 500px;
+    padding-top: 8%;
+
+ }
+ .home .contant h3{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 10px;
+ }
+ .home .contant .home-dsc{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    color: rgb(204, 213, 221);
+ }
+
+
+ /* menu section */
+ h1{
+    font-size: 2.45rem;
+    text-decoration: underline rgb(245, 245, 245);
+
+ }
+ h1 span{
+    color: rgb(250, 250, 250);
+
+ }
+ .menu .box-contianer {
+    /* we couldnot make scroll  */
+    min-height: 40px;
+    max-width: 100%;
+    /* background-color: #fff; */
+   
+    align-items: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    grid-template-columns: repeat(auto-fit,minmax,(30rem,ifr));
+ }
+ .menu .box-contianer .box{
+    background-color: #fff;
+    max-width: 300px;
+    min-height: 400px;
+    padding: 2%;
+    margin: 10px;
+    border-radius: 16px;
+ }
+ .menu .box-contianer .head{
+    margin-bottom: 20px;
+ }
+ .menu .box-contianer .head img{
+    max-width: 100%;
+    object-fit: cover;
+ }
+ .menu .box-contianer .home .price .main-price {
+    display:block;
+ } 
+.menu .box-contianer .head .menu-category{
+   
+    margin-bottom:px ;
+}
+.menu .box-contianer .head h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.menu .box-contianer .head .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu .box-contianer .head .price .main-price{
+    font-weight: lighter;
+    padding-left: 20px;
+    text-decoration: line-through;
+    font-size: 12.5px;
+}
+
+
+/* products section  */
+
+.products .box-container{
+ /* background-color: rgb(110, 106, 106); */
+ height:auto ;
+ display: flex;
+ flex-wrap: wrap;
+}
+.products .box-container .box{
+    background-color: #fff;
+    max-width: 300px;
+    min-height: 300px;
+    padding: 2%;
+    margin: 10px;
+    border-radius: 16px;
+
+    
+}
+.products .box-container .box .box-head .menu-name:link{
+   text-decoration: none;
+   cursor: pointer;
+}
+.products .box-container .box .box-head .menu-name:visited{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(219, 81, 46)
+ }
+.products .box-container .box .box-head h1{
+    margin-top: 20px;
+  }
+.products .box-container .box .image img{
+    width: 100%;
+ }
+
+  .products .box-container .box .box-down .price{
+    font-weight: bold;
+    font-size:30px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  .products .box-container .box .box-down .price .amount{
+   display: block;
+   font-weight: lighter;
+   text-decoration: line-through;
+   font-size: small;
+  }
+ 
+  .products .box-container .box .box-down .add   {
+    /* display: inline-block; */
+   justify-content: right;
+    border: 2.5px #f8220a  solid  ;
+    border-radius:  100% ;
+    text-align: center;
+   
+
+   
+  }
+
+  /* about us section  */
+  .about_us h3{
+    font-size:35px;
+    text-decoration: underline #fff;
+    font-family:'Akshar', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+
+  }
+ .about_us h3 span{
+    color: #fff;
+ }
+
+.about_us .row .image{
+    width: 50%;
+    
+}
+.about_us .row .image img {
+    margin-top: 10px;
+ width: 100%;
+ float: left
+ 
+  }
+  .about_us .row .content {
+  /* background-color: #fff; */
+  width: 48%;
+  column-gap: 1px;
+  float: right;
+ padding: 5px;
+}
+  .about_us .row .content p {
+  padding: 10px;
+  font-family:'Akshar', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+  
+   }
+   .about_us .row .content h2{
+    color: rgb(245, 225, 225);
+   }
+   .about_us .row .content .btn{
+    margin-top:-4px ;
+   }
+   /* review section  */
+   .review h3{
+    color: #fff;
+    font-size: 26px;
+   }
+   .review h3 span {
+    color: black;
+   }
+   .review .box-container{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .review .box-container .box{
+    background-color: #fff;
+    max-width: 300px;
+    min-height: 400px;
+    padding: 2%;
+    margin: 10px;
+    border-radius: 16px;
+   
+    
+}
+.review .box-container .box .commneter{
+    position:relative;
+    padding-left: 40%;
+    margin-top: 5px;
+}
+.review .box-container .box .commneter .img img {
+    border-radius: 100%;
+    width: 30%;
+}
+.review .box-container .box .personel {
+    position: relative;
+}
+.review .box-container .box .personel h6{
+  text-align: center;
+  color: var(--main-color)
+}
+
+/* .contact section */
+
+.contact h3{
+    color:#fff;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:   25px;
+    margin-bottom: 5%;
+}
+.contact h3 span{
+    color: var(--black-color);
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: var(--black-color); */
+    height: auto;
+   
+    column-gap: 1rem;
+}
+.contact .row iframe{
+   height: 600px;
+   width: 50%;
+   
+}
+.contact .row form{
+    background-color: #fff;
+    width: 46%;
+}
+.contact .row form div{
+    margin-bottom: 20px;
+    margin-top: 10px;
+   padding: 10px ;
+}
+.contact .row form .submit{
+    position:absolute;
+    padding-left: 10%;
+}
+.contact .row form div input{
+    font-size: 25px;
+    border-radius: 15px;
+    background-color: black;
+    padding: 10px;
+
+}
+.contact .row form .submit input{
+    border-radius: 15px;
+    background-color: rgb(226, 211, 211);
+    color: var(--main-color);
+}
+.contact .row form .submi input:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+/* blogs section */
+.blogs h3{
+    color: #fff;
+    font-size: 25px;
+}
+.blogs h3 span {
+    color: var(--black-color);
+}
+.blogs .box-container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.blogs .box-container .box {
+    background-color: #fff;
+    max-width: 300px;
+    min-height: 400px;
+    /* padding: 1%; */
+    margin: 10px;
+    border-radius: 16px;
+    transition: 0.1s ease;
+}
+.blogs .box-container .box .content{
+    padding: 2%;
+}
+.blogs .box-container .box .content a{
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+}
+.blogs .box-container .box .content span{
+    display: block;
+    font-size: smaller;
+  }
+  .blogs .box-container .box .content p{
+    display: block;
+    font-weight: bold;
+  }
+  .blogs .box-container .box .images img{
+    width: 100%;
+    border-radius: 5px;
+   
+
+}
+.blogs .box-container .box:hover .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transform:scale(1,1);
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+
+/* footer ozellikler */
+.search {
+    padding:4%;
+    background-color: var(--black-color);
+    
+}
+.search .search-box{
+    text-align: center;
+}
+.search .search-box input{
+    border-radius: 20px;
+    font-size: 35px;
+    padding-left: 1%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.search .search-box button{
+    font-size: 25px;
+    padding: 12.5px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+.search .search-box button:hover{
+ opacity: 0.8;
+ padding: 5px;
+
+    
+}
+.search .share{
+    padding: 5%;
+    text-align: center;
+    
+}
+.search .share a {
+  display: inline;
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  text-align: center;
+
+  background-color: var(--main-color);
+}
+.search .share a:hover{
+    opacity: 0.7;
+    padding: 10px;
+}
+
+.search .cridit{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-family:'Akshar', sans-serif;
+    font-family: 'Cairo', sans-serif;
+
+}
+.search .cridit span{
+    color: var(--main-color);
+}
