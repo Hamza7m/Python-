@@ -1,5 +1,7 @@
 import cv2 
 
+# change the picture  
+
 img = cv2.imread(r'C:\Users\Win10\Desktop\InterFace\Images\img1.jpg')
 print(img)
 pixsel = img.size 
